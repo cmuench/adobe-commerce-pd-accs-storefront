@@ -7,7 +7,7 @@
     "lint:js": "eslint .",
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
     "lint": "npm run lint:js && npm run lint:css",
-    "start": "aem up --print-index",
+    "start": "aem up --print-index --no-open",
     "install:dropins": "node build.mjs && node postinstall.js",
     "postinstall": "npm run install:dropins",
     "postupdate": "npm run install:dropins"
@@ -43,5 +43,6 @@
     "@dropins/storefront-payment-services": "~1.0.1",
     "@dropins/storefront-pdp": "^1.1.1",
     "@dropins/tools": "^0.41.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
