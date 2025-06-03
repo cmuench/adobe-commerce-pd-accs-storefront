@@ -88,18 +88,18 @@ export default async function decorate(block) {
           // Create categories section
           if (ctx.item && ctx.item.categories && ctx.item.categories.length > 0) {
             const categoryIcons = {
-              'All': '🌍',
-              'Office': '📁',
-              'Apparel': '👕',
-              'Bags': '🎒',
-              'Collections': '🖼️',
-              'Lifestyle': '🌟',
-              'Tech': '💻',
-              'Gifts': '🎁',
-              'Travel': '✈️'
+              All: '🌍',
+              Office: '📁',
+              Apparel: '👕',
+              Bags: '🎒',
+              Collections: '🖼️',
+              Lifestyle: '🌟',
+              Tech: '💻',
+              Gifts: '🎁',
+              Travel: '✈️',
             };
 
-            const categoryElements = ctx.item.categories.map(category => {
+            const categoryElements = ctx.item.categories.map((category) => {
               const categoryName = category;
               const categoryIcon = categoryIcons[categoryName] || '🌍';
               return `<div class="product-attribute-category">${categoryIcon} ${categoryName}</div>`;
